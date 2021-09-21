@@ -34,11 +34,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnCreate = findViewById(R.id.btnCreatePdf)
-        layout = findViewById(R.id.clLayout)
+        layout = findViewById(R.id.clLayoutMain)
 
         btnCreate.setOnClickListener {
+            btnCreate.visibility = View.GONE
             bitmap = loadBitmap(layout,layout.width,layout.height)
             createPdf()
+            btnCreate.visibility = View.VISIBLE
         }
 
     }
