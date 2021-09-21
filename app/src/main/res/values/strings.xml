@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CreatePdf</string>
+
+    <string name="error_file">Can\'t read pdf file</string>
+    <string name="send_to">Send mail...</string>
+
+</resources>
